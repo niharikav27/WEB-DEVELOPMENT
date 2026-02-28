@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  font-family: Arial;
+}
+
+.section{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.box{
+  height:150px;
+  width:220px;
+}
+
+
+
+.linear-direction{
+  background: linear-gradient(to right, red, blue);
+}
+
+.linear-angle{
+  background: linear-gradient(45deg, orange, purple);
+}
+
+.linear-multi{
+  background: linear-gradient(to right, red, yellow, green);
+}
+
+.linear-percentage{
+  background: linear-gradient(
+    to right,
+    red 10%,
+    yellow 50%,
+    green 90%
+  );
+}
+
+.linear-hard{
+  background: linear-gradient(
+    to right,
+    red 50%,
+    blue 50%
+  );
+}
+
+.linear-repeating{
+  background: repeating-linear-gradient(
+    45deg,
+    red 0px,
+    red 20px,
+    blue 20px,
+    blue 40px
+  );
+}
+
+
+
+.radial-circle{
+  background: radial-gradient(circle, red, blue);
+}
+
+.radial-ellipse{
+  background: radial-gradient(ellipse, orange, purple);
+}
+
+.radial-position{
+  background: radial-gradient(circle at top left, red, yellow);
+}
+
+.radial-size{
+  background: radial-gradient(circle closest-side, green, black);
+}
+
+.radial-percentage{
+  background: radial-gradient(
+    circle,
+    red 10%,
+    yellow 40%,
+    green 80%
+  );
+}
+
+.radial-repeating{
+  background: repeating-radial-gradient(
+    circle,
+    red 0px,
+    red 10px,
+    blue 10px,
+    blue 20px
+  );
+}
+
+
+
+.conic-basic{
+  background: conic-gradient(red, yellow, green, blue);
+}
+
+.conic-from{
+  background: conic-gradient(from 90deg, red, yellow, green);
+}
+
+.conic-position{
+  background: conic-gradient(from 45deg at center, red, blue, green);
+}
+
+.conic-percentage{
+  background: conic-gradient(
+    red 0% 30%,
+    blue 30% 60%,
+    green 60% 100%
+  );
+}
+
+.conic-hard{
+  background: conic-gradient(
+    red 0deg 120deg,
+    blue 120deg 240deg,
+    green 240deg 360deg
+  );
+}
+
+.conic-repeating{
+  background: repeating-conic-gradient(
+    red 0deg 10deg,
+    blue 10deg 20deg
+  );
+}
+
+</style>
+</head>
+<body>
+
+<h2>Linear Gradients</h2>
+<div class="section">
+  <div class="box linear-direction"></div>
+  <div class="box linear-angle"></div>
+  <div class="box linear-multi"></div>
+  <div class="box linear-percentage"></div>
+  <div class="box linear-hard"></div>
+  <div class="box linear-repeating"></div>
+</div>
+
+<h2>Radial Gradients</h2>
+<div class="section">
+  <div class="box radial-circle"></div>
+  <div class="box radial-ellipse"></div>
+  <div class="box radial-position"></div>
+  <div class="box radial-size"></div>
+  <div class="box radial-percentage"></div>
+  <div class="box radial-repeating"></div>
+</div>
+
+<h2>Conic Gradients</h2>
+<div class="section">
+  <div class="box conic-basic"></div>
+  <div class="box conic-from"></div>
+  <div class="box conic-position"></div>
+  <div class="box conic-percentage"></div>
+  <div class="box conic-hard"></div>
+  <div class="box conic-repeating"></div>
+</div>
+
+</body>
+</html>
